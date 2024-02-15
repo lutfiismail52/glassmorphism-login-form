@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+        .content-auto {
+            content-visibility: auto;
+        }
+        }
+    </style>
+    <title>Glassmorphism Login Form</title>
+</head>
+
+<body class="bg-[url('/img/gambar.jpg')] bg-cover bg-no-repeat bg-slate-900">
+    <div class="container">
+        <div class="mt-36 mb-24 mx-auto w-80 text-center rounded-lg bg-slate-50 bg-opacity-25 backdrop-blur-lg">
+            <p class="pt-6 text-slate-50 text-3xl mb-4 font-bold">Login</p>
+            <form action="#" class="p-6">
+                <div>
+                    <label for="email" class="block text-slate-50 text-start ml-6 mb-2 font-bold">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Enter Your Email"
+                        class="mb-2 py-2 px-7 placeholder-slate-100 rounded-lg bg-slate-50 bg-opacity-25 backdrop-blur-sm focus:outline-none focus:border-rose-400 focus:ring focus:ring-rose-400">
+                </div>
+                <div>
+                    <label for="password" class="block text-slate-50 text-start ml-6 mb-2 font-bold">Password</label>
+                    <input type="password" name="password" id="password" placeholder="Enter Your Password"
+                        class="mb-6 py-2 px-7 placeholder-slate-100 rounded-lg bg-slate-50 bg-opacity-25 backdrop-blur-sm focus:outline-none focus:border-rose-400 focus:ring focus:ring-rose-400">
+                </div>
+                <button type="submit" class="text-slate-50 bg-slate-50 bg-opacity-25 backdrop-blur-sm px-24 py-2 rounded-lg font-semibold">Log
+                    In</button>
+                <p class="text-yellow-400 mt-4">Or</p>
+                <div class="flex flex-wrap items-center justify-between mx-4 mt-4">
+                    <a href="#" class="px-2 py-2 rounded-md font-semibold text-slate-50 text-md bg-slate-50 bg-opacity-25 backdrop-blur-sm"><i
+                            class="bi bi-facebook"></i> Facebook</a>
+                    <a href="#" class="px-2 py-2 rounded-md font-semibold text-slate-50 text-md bg-slate-50 bg-opacity-25 backdrop-blur-sm"><i
+                            class="bi bi-google"></i> Google</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
